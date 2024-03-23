@@ -1,41 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlantWisperer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>PlantWhisperer</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-    <div class="Main">
-       <form action="">
-        <h1>Login</h1>
-        <div class="input-box">
-            <input type="text" placeholder="Username" required>
-            <i class='bx bxs-user' ></i>     
-        </div>
-        <div class="input-box">
-            <input type="password" placeholder="password" required>
-            <i class='bx bxs-lock-alt' ></i>
+    <nav class="bg-dark">
+        <a href="./home.html" style="color: white;">
+            <div class="logo">
+                <div class="nav-logo">
+                    <img src="./logo.png" width="40px" height="40px" alt="Logo">
+                </div>
+                <span style="margin-left: 10px"><b style="color: rgb(7, 82, 7);">PlantWhisperer</b></span>
+            </div>
+
+        </a>
+        <div class="nav-list">
+            <ul class=>
+                <li><a href="./index.html">Home</li></a>
+                <li><a href="#">Crop</a></li>
+                <li><a href="#">Fertilizer</a></li>
+                <li><a href="#">Inspection</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
         </div>
 
-        <div class="remember-forget">
-            <label>
-                <input type="checkbox">
-                Remember me
-            </label>
-            <a href="#">Forget password?</a>
-        </div>
- 
-        <button type="submit" class="btn">Login</button>
+    </nav>
 
-        <div class="register-link">
-            <p>Don't have an account?
-                <a href="#">Register</a>
-            </p>
+    <div class="main-content">
+        <div class="main-video">
+            <img src="./PlantGrowth1.gif" width="500px" height="500px">
+            <!-- <video autoplay width="500px" height="500px">
+                <source src="./PlantGrowth1.gif" type="video/gif"> 
+            </video> -->
         </div>
-       </form>
+
+        <div class="main-text"></div>
     </div>
+
+    <div class="card">
+        <div class="cardContent">
+            <img src="./crop.jpg" alt="Crop" style="width:100%">
+            <div class="container">
+                <h4><b>Crop</b></h4> 
+                <p>Why do we use it?
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p> 
+            </div>
+        </div>
+
+         <div class="cardContent">
+            <img src="./fertilizer.png" alt="Fertilizer" style="width:100%" class="zoomable">
+            <div class="container">
+              <h4><b>Fertilizer</b></h4> 
+              <p>Why do we use it?
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p> 
+            </div>
+        </div>
+
+        <div class="cardContent">
+            <img src="./inspection.png" alt="Inspection" style="width:100%">
+            <div class="container">
+                <h4><b>Inspection</b></h4> 
+                <p>Why do we use it?
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p> 
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>

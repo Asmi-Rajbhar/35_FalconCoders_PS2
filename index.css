@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-dark {
+    background-color: white;
+    color: black;
+}
+
+nav {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo span {
+    margin-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-logo {
+    height: 40px;
+    width: 40px;
+}
+
+nav ul {
+    display: flex;
+}
+
+
+nav ul li a {
+    padding: 7px 10px;
+    cursor: pointer;
+    /* transition: .3s; */
+    margin: 0 .5rem;
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: #CDD193;
+    color: #333;
+}
+
+body {
+    line-height: 1.4;
+    color: var(--dark-color);
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+/* .main-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    /* background-colorred; */
+    /* background-image: url(./PlantGrowth.gif);
+    background-repeat: no-repeat;
+    background-size: auto; */
+
+/* } */
+
+
+/* 
+.main-video{
+    background-image: url(./PlantGrowth.gif);
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+
+} */
+
+.card {
+    padding: 50px 100px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .cardContent{
+    /* background-color: rebeccapurple; */
+    width: 33%;
+    margin: 30px 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow here */
+
+  }
+  
+  .container {
+    padding: 20px 16px;
+  }
+
+  .cardContent > img{
+    overflow: hidden;
+  }
+  .cardContent:hover img{
+    scale: 1.1;
+    transition: all ease 1s;
+}
