@@ -12,13 +12,21 @@ body{
     justify-content:center;
     align-items: center;
     min-height: 100vh;
+<<<<<<< HEAD
     background: url('https://cdn.pixabay.com/photo/2017/09/20/06/27/bridge-2767545_640.jpg') no-repeat;
+=======
+    background: url('https://images.pexels.com/photos/101841/pexels-photo-101841.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat;
+>>>>>>> d72fb235a32ee3e59ccaf2510ea3cc756ac681d7
     background-size: cover;
     background-position: center;
 }
 
 .Main{
+<<<<<<< HEAD
     widht: 420px;
+=======
+    widht: 450px;
+>>>>>>> d72fb235a32ee3e59ccaf2510ea3cc756ac681d7
     background: transparent;
     border: 2px solid rgba(255,255,255,.2);
     backdrop-filter: blur(3px);
@@ -29,27 +37,44 @@ body{
 }
 
 .Main h1{
+<<<<<<< HEAD
     font-size:36px;
+=======
+    font-size:20px;
+>>>>>>> d72fb235a32ee3e59ccaf2510ea3cc756ac681d7
     text-align: center;
 }
 
 .Main .input-box{
     position: relative;
     width: 100%;
+<<<<<<< HEAD
     height: 50px;
+=======
+    height: 35px;
+>>>>>>> d72fb235a32ee3e59ccaf2510ea3cc756ac681d7
     /* background: salmon; */
     margin: 30px 0;
 }
 
 .input-box input{
+<<<<<<< HEAD
     width:100%;
+=======
+    width:95%;
+>>>>>>> d72fb235a32ee3e59ccaf2510ea3cc756ac681d7
     height: 100%;
     background: transparent;
     border: none;
     outline: none;
     border: 2px solid rgba(255,255,255, .2);
+<<<<<<< HEAD
     border-radius: 40px;
     font-size: 16px;
+=======
+    border-radius: 20px;
+    font-size: 14px;
+>>>>>>> d72fb235a32ee3e59ccaf2510ea3cc756ac681d7
     color: #fff;
     padding: 20px 45px 20px 20px;
 }
@@ -66,6 +91,14 @@ body{
     font-size: 20px;
 }
 
+<<<<<<< HEAD
+=======
+.input-box h3{
+    font-size: 15px;
+}
+
+
+>>>>>>> d72fb235a32ee3e59ccaf2510ea3cc756ac681d7
 .Main .remember-forget{
     display: flex;
     justify-content: space-between;
