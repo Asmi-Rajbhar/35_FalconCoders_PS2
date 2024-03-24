@@ -1,0 +1,52 @@
+{% extends 'layout.html' %} {% block body %}
+
+<style>
+  html body {
+    background-color: rgb(197, 253, 145);
+  }
+</style>
+<br /><br />
+  <h2 style="text-align: center; margin: 0px; color: black">
+    <b>Find out which disease has been caught by your plant</b>
+  </h2>
+  <br />
+  <br>
+
+<div style="
+    width: 350px;
+    height: 50rem;
+    margin: 0px auto;
+    color: black;
+    border-radius: 25px;
+    padding: 10px 10px;
+    font-weight: bold;
+  ">
+     <form class="form-signin" method=post enctype=multipart/form-data>
+      <h1 style="font-size: 20px;">Find out which disease <br>has been caught by your plant</h1>
+      <div class="input-box">
+          <h2 class="h4 mb-3 font-weight-normal" style="font-size: 18px;"><b>Please Upload The Image</b></h2>
+          <input type="file" name="file" class="form-control-file" id="file" onchange="preview_image(event)" style="font-weight: bold;">
+          <img id="output-image" class="rounded mx-auto d-block"/>
+          <br>
+          <br>
+          <img id="output-image" class="rounded mx-auto d-block" />
+          <button class="btn btn-lg btn-primary btn-block" id="Predict" type="submit" style="display: flex; justify-content: center; align-items: center; font-weight: bold; height: 25px; width: 75%;">Predict</button>    
+      </div>
+  </body>
+  </html>
+  </form>
+</div>
+
+<script type="text/javascript">
+  function preview_image(event) {
+    var reader = new FileReader();
+    reader.onload = function () {
+      var output = document.getElementById('output-image')
+      output.src = reader.result;
+    }
+    reader.readAsDataURL(event.target.files[0]);
+  }
+</script>
+
+</div>
+{% endblock %}

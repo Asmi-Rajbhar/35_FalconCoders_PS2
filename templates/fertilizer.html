@@ -1,12 +1,27 @@
-<!-- {% extends 'layout.html' %} {% block body %} -->
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" >
-
+{% extends 'layout.html' %} {% block body %}
+<!-- <link rel="stylesheet" href="../static/css/bootstrap.css"> -->
 <style>
     html body {
         background-color: rgb(197, 253, 145);
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+
+    .form-control {
+        display: block;
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     }
 </style>
 <!--Form Section-->
@@ -86,4 +101,4 @@
         </div>
     </form>
 </div>
-<!-- {% endblock %} -->
+{% endblock %}

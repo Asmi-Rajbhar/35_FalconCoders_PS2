@@ -155,40 +155,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body>
 
-	<!-- Navigation -->
-	<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" style="background-color: #1C00ff00; width: 100%;">
-		<div class="container d-flex justify-content-between align-items-center">
-			<div>
-				<a class="navbar-brand" href="{{ url_for('home') }}">
-					<img src="{{ url_for('static', filename='images/logo3.png') }}" style="width: 90px; height: 55px" alt="" class="logo-img">
-				</a>
-			</div>
-			<div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-					aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarResponsive">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="{{ url_for('home') }}">Home
-								<span class="sr-only">(current)</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="{{ url_for('crop_recommend') }}">Crop</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="{{ url_for('fertilizer_recommendation') }}">Fertilizer</a>
-						</li>
-						<li class="nav-item">
+	<!-- <li class="nav-item">
 							<a class="nav-link" href="{{ url_for('disease_prediction') }}">Disease</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</nav> -->
+					 -->
 
 	<nav class="bg-dark">
 		<a href="./home.html" style="color: white;">
@@ -202,10 +171,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</a>
 		<div class="nav-list">
 			<ul class=>
-				<li><a href="./index.html">Home</li></a>
+				<li><a href="{{url_for('home')}}">Home</li></a>
 				<li><a href="{{ url_for('crop_recommend') }}">Crop</a></li>
 				<li><a href="{{ url_for('fertilizer_recommendation') }}">Fertilizer</a></li>
-				<li><a href="#">Inspection</a></li>
+				<li><a href="{{ url_for('disease_prediction') }}">Inspection</a></li>
 				<li><a href="#">Feedback</a></li>
 			</ul>
 		</div>
