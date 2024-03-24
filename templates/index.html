@@ -1,0 +1,72 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- banner -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantWhisperer</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+
+<!-- navbar -->
+<div class="main-content">
+	<div class="main-video">
+		<img src="../static/images/PlantGrowth1.gif" width="550px" height="550px">
+		<!-- <video autoplay width="500px" height="500px">
+			<source src="./PlantGrowth1.gif" type="video/gif"> 
+		</video> -->
+	</div>
+
+	<div class="main-text">
+		<div class="main-text-head">
+			<h1>Plants make a positive impact on your environment</h1>
+		</div>
+		<div class="main-text-sub">
+			<h3>"Wherever there's green, there's life: Embrace the Power of Plants."</h3>
+		</div>
+	</div>
+</div>
+
+<div class="card-head">
+	<h3>Services</h3>
+</div>
+<div class="card">
+	<div class="cardContent">
+		<a href="{{ url_for('crop_recommend') }}"><img src="../static/images/crop.jpg" alt="Crop" style="width:100%"></a>
+		<div class="container">
+			<h4><b>CROP</b></h4> 
+			<p>Recommendation about the type of crop to be cultivated which will be best suited in the particular given condition.</p> 
+		</div>
+	</div>
+
+	 <div class="cardContent">
+		<a href="{{ url_for('fertilizer_recommendation') }}"><img src="../static/images/fertilizer.png" alt="Fertilizer" style="width:100%" class="zoomable"></a>
+		<div class="container">
+		  <h4><b>FERTILIZER</b></h4>
+		  <p>Recommendation about the type of fertilizer which is best suited for a soil and also recommend the type of crop that can be grown.</p> 
+		</div>
+	</div>
+
+	<div class="cardContent">
+		<a href="#"><img src="../static/images/inspection.png" alt="Inspection" style="width:100%"></a>
+		<div class="container">
+			<h4><b>INSPECTION</b></h4> 
+			<p>Prediction of the Species of the Plant.
+				Predicting the name and the cause of the diesase to the plant.
+			</p> 
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>
+
+
+
+{% endblock %}

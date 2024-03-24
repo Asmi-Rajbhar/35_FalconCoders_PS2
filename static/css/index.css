@@ -45,7 +45,7 @@ nav ul li a {
     cursor: pointer;
     /* transition: .3s; */
     margin: 0 .5rem;
-    color: black;
+    color:rgb(2, 49, 2);
 }
 
 nav ul li a:hover {
@@ -69,18 +69,19 @@ ul {
     padding: 0;
 }
 
-.main-content{
+.main-content {
     display: flex;
     justify-content: space-between;
     padding: 10px 50px;
 }
+
 /* .main-content{
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100%;
     /* background-colorred; */
-    /* background-image: url(./PlantGrowth.gif);
+/* background-image: url(./PlantGrowth.gif);
     background-repeat: no-repeat;
     background-size: auto; */
 
@@ -96,35 +97,80 @@ ul {
 
 } */
 
+.main-text {
+    /* background-color: red; */
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    /* Adjust width as needed */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+     */
+     margin: auto;
+     width: 60%;
+     margin-right: 30px;
+}
+
+.main-text-head {
+    color: rgb(2, 49, 2);
+    font-size:large;
+    margin-bottom: 30px;
+}
+
+.main-text-sub{
+    color: rgb(21, 81, 21);
+    font-size:larger;
+    margin-top: 30px;
+}
+
 .card {
-    padding: 50px 100px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 10px 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     display: flex;
     justify-content: space-around;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+}
 
-  .cardContent{
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardContent {
     /* background-color: rebeccapurple; */
     width: 33%;
     margin: 30px 20px;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow here */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Add shadow here */
 
-  }
-  
-  .container {
+}
+
+.container {
     padding: 20px 16px;
-  }
+}
 
-  .cardContent > img{
+.cardContent>img {
     overflow: hidden;
-  }
-  .cardContent:hover img{
+}
+
+.cardContent:hover img {
     scale: 1.1;
     transition: all ease 1s;
+}
+
+.card-head{
+    color: rgb(2, 49, 2);;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container > h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(2, 49, 2);
+}
+
+.container > p{
+    color: rgb(21, 81, 21);
 }
